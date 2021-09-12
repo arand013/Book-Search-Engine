@@ -30,11 +30,10 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
+ app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/public/index.html"));
+ });
 
-// app.use(routes);
 
 db.once("open", () => {
   app.listen(PORT, () => {
@@ -43,6 +42,7 @@ db.once("open", () => {
     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
   });
 });
+
 db.on("error", (err) => {
   console.error("MongoDB connection error: ", err);
 });
