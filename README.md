@@ -1,8 +1,8 @@
-# Online Book Search Engine ( Singel Page Application )
+# Online Book Search Engine ( Single Page Application )
 
 ## Description
+A Book Search Engine built with GraphQL API and runs on an Apollo Server. Using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API
 
-Here lays the description
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -15,9 +15,10 @@ Here lays the description
 1. First, git clone repo
 2. Second, 'npm install' to get all packages necessary.
 3. Third, run 'npm run start' to test client and server folder concurrently.
-4. Then, connect MongoDB database
-5. After, Deploy connection with heroku and create a heroku page 'heroku create < name > '
-6. Finally, 'git push heroku main'
+4. Then, connect MongoDB database and deploy a heroku app using 'heroku create < name > '
+5. After, In the heroku website go to your app setting and connect mongo database with "config var" in setting of heroku web-page. 
+6. Finally,( 'git add . ' ), ( 'git commit -m_____ '
+) and ( 'git push heroku main' )
 
 ## Language(s)
 MERN Stack: 
